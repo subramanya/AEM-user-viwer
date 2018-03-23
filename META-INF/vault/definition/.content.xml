@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2018-03-22T23:34:35.853Z"
+    jcr:createdBy="admin"
+    jcr:description=""
+    jcr:lastModified="{Date}2018-03-22T23:34:35.853Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-6.0.0.SP3"
+    group="my_packages"
+    lastUnwrapped="{Date}2018-03-22T23:34:35.853Z"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2018-03-22T23:34:35.853Z"
+    lastWrappedBy="admin"
+    name="User-viewer"
+    version="">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/users"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/content/Testing"
+            rules="[]"/>
+    </filter>
+</jcr:root>
