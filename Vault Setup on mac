@@ -1,0 +1,40 @@
+You need to download the AEM 5.6.1 quickstart.jar file
+Unzip aem-5.6.1-quickstart.jar file extract it.  
+Inside crx-quickstart folder there is "opt" folder. This contains "filefault" folder. This "filefault" contains two folders:
+"bin" and "lib."
+"bin" folder has "vlt" executalbe. we can copy this any where in file system and 
+ the path to "vlt" filepath to  $path( in bash_profile file so that vlt can be executed from any directory) 
+ Ve need to copy the "lib" foler to user's home directory, for example copy "lib" folder to:/Users/slaks1/
+ 
+ Sample Check out command
+ 
+ if you have your source code(apps and etc folders) here:
+ /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/jcr_root
+ if you need to checkout /etc/designs/geometrixx from AEM then opent the file
+ /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/META-INF/vault/filter.xml
+ 
+ then add the new entry :   <filter root="/etc/designs/geometrixx"/>
+ 
+ <?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/linkRewriterIcon"/>
+    <filter root="/apps/sling" />
+    <filter root="/etc/designs/linkRewriterIcon"/>
+    <filter root="/etc/designs/geometrixx"/>
+</workspaceFilter>
+ 
+ Then go to folder  /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/jcr_root
+ 
+ execute the command: vlt --credentials admin:admin co http://localhost:4502/crx . --force
+  
+ if you have done any changes under apps or libs folder 
+ 
+ Then just give the command: vlt ci --force
+ The above command will push your changes to AEM.
+
+ 
+ under the above folder
+ 
+ this is the useful page for all Vault related commands:
+ http://jackrabbit.apache.org/filevault/usage.html
+ http://grepcode.com/project/repo1.maven.org/maven2/org.apache.jackrabbit.vault/vault-cli/
