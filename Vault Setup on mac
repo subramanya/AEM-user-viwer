@@ -27,15 +27,15 @@ We need to copy the "lib" foler to user's home directory, for example copy "lib"
  Then go to folder  /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/jcr_root
  
  execute the command: vlt --credentials admin:admin co http://localhost:4502/crx . --force
-  
- if you have done any changes under apps or libs folder 
  
- Then just give the command: vlt ci --force
+ SAMPLE CHEKC-IN: 
+ if you have done any changes under apps or libs folder 
+ Goto: /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/jcr_root
+ Then just give the command: vlt ci --force 
  The above command will push your changes to AEM.
 
+
  
- under the above folder
- 
- this is the useful page for all Vault related commands:
+ These are the useful Links for all Vault related commands:
  http://jackrabbit.apache.org/filevault/usage.html
  http://grepcode.com/project/repo1.maven.org/maven2/org.apache.jackrabbit.vault/vault-cli/
