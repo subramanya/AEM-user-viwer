@@ -3,8 +3,9 @@ Unzip aem-5.6.1-quickstart.jar file extract it.
 Inside crx-quickstart folder there is "opt" folder. This contains "filefault" folder. This "filefault" contains two folders:
 "bin" and "lib."
 "bin" folder has "vlt" executalbe. we can copy this any where in file system and 
- the path to "vlt" filepath to  $path( in bash_profile file so that vlt can be executed from any directory) 
- Ve need to copy the "lib" foler to user's home directory, for example copy "lib" folder to:/Users/slaks1/
+We need to add "vlt" filepath to  environent varialbe path ((in bash_profile file so that "vlt" can be executed 
+ from any directory). 
+We need to copy the "lib" foler to user's home directory, for example copy "lib" folder to:/Users/slaks1/)$path
  
  Sample Check out command
  
