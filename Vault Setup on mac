@@ -7,7 +7,7 @@ We need to add "vlt" filepath to  environent varialbe path ((in bash_profile fil
  from any directory). 
 We need to copy the "lib" foler to user's home directory, for example copy "lib" folder to:/Users/username/)
  
- Sample Check out command
+ Sample Check out command(To fetch the files/content from AEM).
  
  if you have your source code(apps and etc folders) here:
  /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/jcr_root
