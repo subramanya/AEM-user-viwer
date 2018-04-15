@@ -11,7 +11,7 @@ We need to copy the "lib" foler to user's home directory, for example copy "lib"
  
  if you have your source code(apps and etc folders) here:
  /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/jcr_root
- if you need to checkout /etc/designs/geometrixx from AEM then opent the file
+ if you need to checkout /etc/designs/geometrixx from AEM then open the file
  /Users/username/Documents/Sample_AEM/LinkRewriter/linkRewriterIcon/ui.apps/src/main/content/META-INF/vault/filter.xml
  
  then add the new entry :   <filter root="/etc/designs/geometrixx"/>
